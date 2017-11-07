@@ -23,7 +23,19 @@ function add(a, b) {
     return a + b;
 }
 
-console.log(add(4,1000000000))
+console.log(add(4, 1000000000))
 
+
+//Anonymous function
+var otherFunction = function (a, b) {
+    return a + b;
+}
+console.log(otherFunction(2, .4));
+
+//write a function that takes in a name and prints "Hello [name]"
+
+function helloNamer(name) {
+    console.log("Hello " + name + "!");
+}
 
 
