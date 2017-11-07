@@ -47,10 +47,25 @@ function swap() {
     var imageSrc = document.getElementById("swapImage").src;
 
     if (imageSrc.includes("Mozilla")) {
-        document.getElementById("swapImage").src = "images/suite_transparent_large.png"
+        document.getElementById("swapImage").src = "images/suite_transparent_large.png";
     }
     else {
-        document.getElementById("swapImage").src = "images/Mozilla-Firefox-Free-Download.png"
+        document.getElementById("swapImage").src = "images/Mozilla-Firefox-Free-Download.png";
     }
+    //for debugging
+    console.log(imageSrc)
+}
+
+function printArray()
+{
+    var favFoods = ["Pizza", "Sushi", "Pupusas", "Cabbage and Noodles"];
+    var outputText = "<ul>";
+
+    for(var i = 0; i<favFoods.length; i++){
+        outputText += "<li>" + favFoods[i] + "</li>";
+    }
+
+    outputText += "</ul>";
+    document.getElementById("sectionTwo").innerHTML += outputText;
 }
 
