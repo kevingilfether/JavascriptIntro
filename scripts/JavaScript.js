@@ -43,4 +43,14 @@ function updateDiv() {
     document.getElementById("sectionOne").innerHTML = "<p>" + outputString + "</p>";
 }
 
+function swap() {
+    var imageSrc = document.getElementById("swapImage").src;
+
+    if (imageSrc.includes("Mozilla")) {
+        document.getElementById("swapImage").src = "images/suite_transparent_large.png"
+    }
+    else {
+        document.getElementById("swapImage").src = "images/Mozilla-Firefox-Free-Download.png"
+    }
+}
 
