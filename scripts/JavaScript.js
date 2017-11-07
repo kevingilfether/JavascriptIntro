@@ -38,4 +38,9 @@ function helloNamer(name) {
     console.log("Hello " + name + "!");
 }
 
+function updateDiv() {
+    var outputString = "Hello, and welcome to my webpage.";
+    document.getElementById("sectionOne").innerHTML = "<p>" + outputString + "</p>";
+}
+
 
